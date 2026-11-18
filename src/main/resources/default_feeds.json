@@ -1,0 +1,6 @@
+{
+  "feeds" : [
+    "https://news.hackclub.com/feed.xml",
+    "https://xkcd.com/rss.xml"
+  ]
+}
