@@ -3,6 +3,7 @@ package dev.speedslicer.ditto.rss.client;
 import com.squareup.moshi.JsonAdapter;
 import com.squareup.moshi.Moshi;
 import com.williamcallahan.tui4j.compat.bubbletea.Program;
+import dev.speedslicer.ditto.rss.client.newsfeeds.ClientNewsFeed;
 import dev.speedslicer.ditto.rss.client.templates.json.config.FeedConfig;
 
 import java.io.File;
@@ -14,13 +15,13 @@ import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
-public class RSSClient {
+public class Client {
     FeedConfig feedConfig;
     Path configFolder, feedFile;
     Program program;
     public static final Logger LOGGER = LogManager.getLogManager().getLogger("RSSClient");
     
-    public RSSClient() {
+    public Client() {
         try {
             loadConfig();
         }
@@ -51,6 +52,7 @@ public class RSSClient {
         Moshi moshi = new Moshi.Builder().build();
         JsonAdapter<FeedConfig> feedJsonAdapter = moshi.adapter(FeedConfig.class);
         feedConfig = feedJsonAdapter.fromJson(Files.newBufferedReader(feedFile).readAllAsString());
-        new RSSClientNewsFeeds(feedConfig);
+        new ClientNewsFeed(feedConfig);
+
     }
 }

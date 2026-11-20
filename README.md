@@ -1,4 +1,12 @@
-# Ditto RSS Client
-My small Terminal RSS client so I can read slacker news in a very professional format :3
+# Shaun's RSS Client
+My small Terminal RSS client so I can read slacker news in a very professional format
 
-3 day project!
+It's very average, but it gets the job done. There isn't much config options, except being able to change the feeds. I will add more funcitonality later down the line but this is fine for my use for now.
+
+To compile, run:
+```
+./gradlew build
+```
+and your compiled stuff will be in /build!
+
+I personally binded it to a command, so I can run ```news``` and it shows up. 

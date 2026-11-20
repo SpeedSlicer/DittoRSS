@@ -1,5 +1,7 @@
 {
-  "feeds" : [
-    "https://news.hackclub.com/feed.xml"
-  ]
+  "feeds" : {
+    "Slacker News" : "https://news.hackclub.com/feed.xml",
+    "XKCD" : "https://xkcd.com/rss.xml",
+    "BBCI UK": "https://feeds.bbci.co.uk/news/rss.xml"
+  }
 }
