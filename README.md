@@ -7,7 +7,7 @@ To compile, run:
 ```
 ./gradlew build
 ```
-and your compiled stuff will be in /build!
+and your compiled stuff will be in /build/distributions! (alternatively, grab from releases)
 
 I personally binded it to a command, so I can run ```news``` and it shows up. 
 
