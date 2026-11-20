@@ -38,6 +38,10 @@ public class ModelNewsFeed implements Model {
                 default -> UpdateResult.from(this);
             };
         }
+        if (msg instanceof WindowSizeMessage) {
+            listNewsFeed.updateWindowSize(((WindowSizeMessage) msg).width(), ((WindowSizeMessage) msg).height());
+            return UpdateResult.from(this);
+        }
 
         return UpdateResult.from(this);
     }

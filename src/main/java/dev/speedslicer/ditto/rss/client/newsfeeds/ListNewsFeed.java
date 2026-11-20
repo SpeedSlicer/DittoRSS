@@ -131,6 +131,6 @@ public class ListNewsFeed {
     }
 
     public void updateWindowSize(int width, int height) {
-
+        OTHER_ARTICLE_AMOUNT = height - 3;
     }
 }
