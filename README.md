@@ -10,3 +10,7 @@ To compile, run:
 and your compiled stuff will be in /build!
 
 I personally binded it to a command, so I can run ```news``` and it shows up. 
+
+
+App Demo:
+![DEMO.png](docs/DEMO.png)
